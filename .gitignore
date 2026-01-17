@@ -1,0 +1,19 @@
+# Rust build output
+/target/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Logs
+*.log
+
+# Editor / IDE
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.swp
+*~

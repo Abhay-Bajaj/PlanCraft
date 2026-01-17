@@ -1,0 +1,18 @@
+{
+    "from": "data/transactions.csv",
+    "select": [
+        "user_id",
+        "count(*)",
+        "sum(amount)"
+    ],
+    "where": [
+        {
+            "col": "city",
+            "op": "==",
+            "val": "SF"
+        }
+    ],
+    "group_by": [
+        "user_id"
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "from": "data/transactions.csv",
+    "select": [
+        "user_id",
+        "amount",
+        "city"
+    ],
+    "where": [
+        {
+            "col": "amount",
+            "op": ">",
+            "val": 50
+        }
+    ],
+    "limit": 10
+}

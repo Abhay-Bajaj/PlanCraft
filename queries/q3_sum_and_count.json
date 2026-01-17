@@ -1,0 +1,11 @@
+{
+    "from": "data/transactions.csv",
+    "select": [
+        "user_id",
+        "count(*)",
+        "sum(amount)"
+    ],
+    "group_by": [
+        "user_id"
+    ]
+}
