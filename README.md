@@ -36,13 +36,34 @@ This project focuses on **query planning and execution fundamentals** rather tha
 
 ## Quickstart
 
-Run queries directly from JSON files:
+Clone and Run queries directly from JSON files:
 
 ```bash
+git clone https://github.com/<your-username>/<your-repo-name>.git
+cd <your-repo-name>
+```
+```bash
+cargo run -- queries/q1_sum_by_user.json
 cargo run -- queries/q2_group_sum.json
 cargo run -- queries/q3_sum_and_count.json
 cargo run -- queries/q4_filtered_grouped.json
 ```
+
+## Explain the Plan
+
+Print the optimized logical plan:
+```bash
+cargo run -- --explain queries/q3_sum_and_count.json
+```
+Compare original vs optimized:
+```bash
+cargo run -- --explain-both queries/q3_sum_and_count.json
+```
+Output as JSON:
+```bash
+cargo run -- --format json queries/q3_sum_and_count.json
+```
+
 
 ## Using Your Own Data
 
